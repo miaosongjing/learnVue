@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- :style绑定行内样式,属性值是对象或数组-->
+    <!--<div style="color:red;font-size: 30px;width: 100px;height: 40px" :style="{background:'black'}">开心</div>-->
+
+    <div style="color:red;font-size: 30px;width: 100px;height: 40px" :style="[style1,style2]">开心</div>
+    <!-- 不能通过true/false控制样式实现-->
+    <!--<div style="color:red;font-size: 30px;width: 100px;height: 40px" :style="{style1:true,style2:false}">开心</div>-->
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            style1:{textAlign:'center'},
+            style2:{margin:'20px'}
+        }
+    });
+</script>
+</body>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="a"/>{{msg}}
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        //watch:
+        //属性名和被观察数据的名字一致
+        //支持异步,一般用于监听v-model绑定的数据,从而改变关联的另一个数据
+        el: '#app',
+        watch:{
+            a(newVal,oldVal){
+                console.log(1);
+                this.msg='...';
+                setTimeout(()=>{
+                    if(this.a.length>5){this.msg='输入字数多了';};
+                    if(this.a.length<3){this.msg='太少了了';}
+                },2000);
+                return this.msg;
+            }
+        },
+        data: {
+            a:'',
+            msg:''
+        }
+    });
+</script>
+</body>
+

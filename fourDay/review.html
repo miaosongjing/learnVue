@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    //1.vue是声明式的 用以数据的双向绑定
+    //2.v- dom的行间属性
+    //3.v-model v-text v-html v-for v-bind v-if v-show v-cloak(解决闪烁问题) v-once
+    //4.事件 :v-bind/@
+    //绑定的方法定义在methods中
+    //传参:默认第一个为事件对象
+    //5.computed 定义的都是变量,会有缓存,当依赖的属性发生改变时需要重新计算
+    //6.watch 支持异步 监听响应式变化的数据
+    //7.created
+    //生命周期
+    //数据请求axios axios.get(url).then(fn,fn2);
+    //8.filter
+    //9.directives
+
+    let vm = new Vue({
+        el: '#app',
+        data: {}
+    });
+</script>
+</body>
+

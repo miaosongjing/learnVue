@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="a in products">{{a.productName}}</li>
+    </ul>
+</div>
+<script src="./6.ajax.js"></script>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        created: function () {//需要ajax请求数据时,在created状态中进行
+//            let _this=this;
+//            ajax({url:'./carts.json'}).then(function (val) {
+//                //this->window
+//                _this.products=JSON.parse(val);
+//            });
+            ajax({url:'./carts.json'}).then(val=>{
+                //箭头函数中的this指向上层作用域中的this
+                this.products=JSON.parse(val);
+            })
+        },
+
+        data: {
+            products:''
+        }
+    });
+</script>
+</body>
+

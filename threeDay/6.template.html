@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--<template v-if="flag">-->
+        <!--<div>1</div>-->
+        <!--<div>2</div>-->
+        <!--<div>3</div>-->
+        <!--<div>4</div>-->
+    <!--</template>-->
+    <!--<div v-else>5</div>-->
+    <!--实现切换出现   1.template不支持v-show 2.如果template包裹的元素中有某个元素一致,则不发生切换,此时需要使用key进行区别-->
+    <button @click="flag=!flag">切换</button>
+    <template v-if="flag">
+        <label>登陆</label>
+        <input type="text" key="1"/>
+    </template>
+    <template v-else>
+        <label>注册</label>
+        <input type="text" key="2"/>
+    </template>
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag:true,
+        },
+        methods:{
+            fn(){
+
+            }
+        }
+    });
+</script>
+</body>
+

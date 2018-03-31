@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- 循环谁,就把v-for指定放在谁上-->
+    <!--<ul>-->
+        <!--<li v-for="(a,index) in fruit">{{a}}{{index}}</li>-->
+    <!--</ul>-->
+    <ul>
+        <li v-for="(b,index) in fruit">{{index+1}}.{{b.name}}
+            <ul>
+                <li v-for="(a,childIndex) in b.color">{{index+1}}.{{childIndex+1}}{{a}}</li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+//            fruit:[1,2,3],
+            fruit:[{name:'apple',color:['red','green','yellow']},
+                {name:'banana',color:['yellow']},
+                {name:'orange',color:['green','yellow']}
+            ]
+        }
+    });
+</script>
+</body>
+

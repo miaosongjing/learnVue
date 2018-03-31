@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #a{
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--<select name="a" id="" multiple v-model="b">  &lt;!&ndash;v-model会获取option中的value值&ndash;&gt;-->
+        <!--<option value="1" disabled>请选择</option>-->
+        <!--<option value="2">游泳</option>-->
+        <!--<option value="3">睡觉</option>-->
+        <!--<option value="4">看书</option>-->
+    <!--</select>-->
+    <!--在radio中  通过v-model控制value值,实现分组和单选  原生中通过name实现分组单选-->
+    <input type="radio" v-model="sex" value="男"/>男
+    <input type="radio" v-model="sex" value="女"/>女
+    <!-- 在text中,v-model控制输入框的值-->
+    <input type="text" v-model="c"/>
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            a:false,
+            b:["2"],
+            sex:"男",
+            c:'aaaa'
+        }
+    });
+</script>
+</body>
+

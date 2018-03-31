@@ -1,0 +1,30 @@
+学习内容:
+1.chat聊天口
+2.复选框,单选框的单选/全选/反选控制
+3.生命周期 :钩子函数,函数中的this指向实例
+4.axios原理:ajax+promise,一般放在created中
+5.购物车
+6.v-for循环数据 v-bind动态绑定数据
+7.filter:将数据按照想要的形式进行格式化
+filter:{
+    toFixed(input,param){
+        input要过滤的数据,param过滤传参
+    }
+}
+8.computed:计算属性;
+//1.挂载在当前实例上,不能重名;
+//2.会根据依赖的属性(归vue管理的数据进行响应式变化)进行缓存
+//3.此属性不支持异步,异步使用watch
+//4.默认调用get方法,get方法中必须要有return
+computed:{
+    //5.属性值为一个对象,自带get和set方法
+    checkAll{
+        get(){},
+        set(val){ val为设置时传递的参数}
+    },
+    //6.属性值为一个函数,默认执行get方法,仅读取
+    sum(){ }
+}
+//9.v-if/v-show
+//v-if操作的是dom,可以和v-else-if/v-else连用
+//v-show操作的是样式
