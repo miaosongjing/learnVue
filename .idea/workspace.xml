@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39813462-45b0-4059-aa3e-75a382bd5544" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fourDay/1.git基础.html" afterPath="$PROJECT_DIR$/fourDay/1.git基础.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vue.iws" />
@@ -78,8 +76,8 @@
       <file leaf-file-name="1.git基础.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fourDay/1.git基础.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49632353">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5514706">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -372,7 +370,13 @@
       <option name="project" value="LOCAL" />
       <updated>1522494374628</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="好了&#10;">
+      <created>1522495321321</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522495321321</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -440,7 +444,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="试一试,成功了吗" />
     <MESSAGE value="再试试吧" />
-    <option name="LAST_COMMIT_MESSAGE" value="再试试吧" />
+    <MESSAGE value="好了&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="好了&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -793,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fourDay/1.git基础.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49632353">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5514706">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
