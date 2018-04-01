@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39813462-45b0-4059-aa3e-75a382bd5544" name="Default" comment="测试2&#10;">
+    <list default="true" id="39813462-45b0-4059-aa3e-75a382bd5544" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oneNd/1.运行node.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vue.iws" />
@@ -23,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1.git基础.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/oneGit/1.git基础.html">
+      <file leaf-file-name="1.运行node.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/oneNd/1.运行node.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33088234">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.4116638">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Html5" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -100,6 +101,7 @@
         <option value="$PROJECT_DIR$/fourDay/3.git远程.html" />
         <option value="$PROJECT_DIR$/fourDay/1.git基础.html" />
         <option value="$PROJECT_DIR$/fourDay/2.git分支.html" />
+        <option value="$PROJECT_DIR$/oneNd/1.运行node.js" />
       </list>
     </option>
   </component>
@@ -177,7 +179,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oneGit" />
+              <option name="myItemId" value="oneNd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.5.promise.js">
+  <component name="RunManager" selected="Node.js.1.运行node.js">
     <configuration default="false" name="10.event.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/oneWEEK/10.event.html">
       <method />
     </configuration>
@@ -233,6 +235,9 @@
       <method />
     </configuration>
     <configuration default="false" name="5.promise.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="E:/node" path-to-js-file="$PROJECT_DIR$/twoDay/5.promise.js" working-dir="$PROJECT_DIR$/twoDay">
+      <method />
+    </configuration>
+    <configuration default="false" name="1.运行node.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="E:/node" path-to-js-file="1.运行node.js" working-dir="$PROJECT_DIR$/oneNd">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -273,16 +278,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.10.event.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.5.promise.html" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.5.promise.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.1.运行node.js" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.5.promise.js" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.5.promise.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.10.event.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.1.运行node.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.5.promise.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.5.promise.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.10.event.html" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +341,13 @@
       <option name="project" value="LOCAL" />
       <updated>1522548199834</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="测试3&#10;">
+      <created>1522548731822</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522548731822</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -350,19 +363,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49183005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22222222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -406,7 +419,8 @@
     <MESSAGE value="测试&#10;" />
     <MESSAGE value="测试1&#10;" />
     <MESSAGE value="测试2&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试2&#10;" />
+    <MESSAGE value="测试3&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试3&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -446,6 +460,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33088234">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oneNd/1.运行node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4116638">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>

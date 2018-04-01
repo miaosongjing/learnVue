@@ -1,3 +1,9 @@
-/**
- * Created by Administrator on 2018/4/1 0001.
+console.log(global);
+/*
+异步:
+元素绑定事件行为/定时器/ajax/回调函数
+ */
+/*
+NODE:单线程,异步(通过回调函数解决)
+主任务队列和等待队伍队列
  */
