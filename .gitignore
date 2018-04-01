@@ -1,5 +1,5 @@
-node_modules/
-.git/
-.idea/
+node_modules
+.git
+.idea
 package.json
 package-lock.json
