@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+/*
+ 一 git下载
+ 二 配置用户名和密码
+ $ git config --global user.name "你的github用户名"
+ $ git config --global user.email "你的github邮箱"
+ git congig --list查看配置信息
+ 三 初始化git: git init
+ 四 建立远程连接: git remote add origin[自定义名字] 地址
+ git remote -v查看远程关联信息
+ 五 添加忽略文件
+ 六 本地文件提交到远程仓库
+ git add -A :文件添加到暂存区
+ git commit -m'':暂存区文件提交到历史区
+ git push origin master:历史区文件推送到远程仓库
+ 如果文件夹是空的,既不会提交到远程仓库
+ 七 远程仓库文件拉取本地及合并
+ git clone 地址:把远程仓库文件克隆到本地
+ git fetch origin master:从远程仓库把资源拉取到本地,git diff master origin/master
+ git merge origin/master 将拉取的文件与本地文件进行合并
+ git pull origin master:从远程仓库把资源拉取并进行合并
+ git pull origin master --allow-unrelated-histories:强制拉取
+ 九 在webstorm中,使当前文件夹与github账号关联:
+ file--defaultSettings--version control--github
+ */
+
+
+/*
+ dos命令
+ 1.创建文件夹:mkdir 文件夹名
+ 2.创建文件:touch 文件名
+git中
+ 3.vi 文件名:进入编辑模式 i进行编译 ESC退出编译模式 :wq保存并推出 :q退出
+ 4.cat 文件名:查看内容
+ 5.echo 编辑内容 > 文件名 :添加内容,会出现覆盖
+    echo 编辑内容 >> 文件名 :添加内容
+ 6.ls -all查看当前文件夹下所有目录
+ 7.git status 查看当前仓库的状态 工作区的文件是红色的,通过git add添加到暂存区后,文件变为绿色
+ 8.查看提交记录
+    git log查看日志:各个版本号
+    git reflog查看所有提交的版本号
+ 9.不同区比较.
+     工作区和暂存区git diff
+     暂存区和历史区git diff --cached（--staged）
+     工作区和版本库git diff master
+ 10.删除
+    git rm 文件名:删除工作区和缓存区 git rm --cached仅删除缓存区
+ 11.撤回文件到工作区/撤销修改文件内容
+    git checkout commit_id 文件名:将文件恢复某个版本
+    git checkout 文件名:将文件修改的内容撤销 先从缓存区撤销,缓存区无内容，从历史区域撤销
+    git reset Head 文件名:将文件从暂存区撤回到工作区
+    git reset --hard commit_id:通过版本id恢复
+
+
+ */
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- 1.如果只有一个复选框,用v-model=数据a控制选中状态(默认将v-model中的值转为布尔值进行选中)-->
+    <!--<input type="checkbox" v-model="a" value="1"/>吃西瓜-->
+    <!-- 2.如果有多个复选框,用v-model=数组将这多个复选框默认为一组(只用一个数据的话,操作一个,其他会全部选中或不选中)通过value控制选中状态-->
+    爱好:<input type="checkbox" v-model="b" value="跑步"/>跑步
+         <input type="checkbox" v-model="b" value="爬山"/>爬山
+         <input type="checkbox" v-model="b" value="睡觉"/>睡觉
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            a:100,
+//            b:0
+            b:[]
+        }
+    });
+</script>
+</body>
+

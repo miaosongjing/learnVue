@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./../node_modules/animate.css/animate.css"/>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .flag{
+            width:100px;
+            height: 100px;
+            background: burlywood;
+
+        }
+        /*
+        .ff-enter-active显示动画开始状态
+        .ff-enter-to 显示动画结束状态
+        .ff-leave-active 隐藏动画开始状态
+        .ff-leave-同 隐藏动画结束状态
+        */
+        /*.ff-enter-active{*/
+            /*opacity: 0;*/
+        /*}*/
+        /*.ff-enter-to{*/
+            /*opacity: 1;*/
+            /*transition: all 1s linear;*/
+        /*}*/
+        /*.ff-leave-active{*/
+            /*opacity: 1;*/
+        /*}*/
+        /*.ff-leave-to{*/
+            /*opacity: 0;*/
+            /*transition: all 1s linear;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--1. v-if:如果条件为true,那么显示 操作的是dom节点而不是css样式-->
+    <div v-if="Math.random()>0.5">111</div>
+    <div v-else-if="Math.random()<0.3">333</div>
+    <div v-else>222</div>
+    <!--2. v-show 操作的是元素的样式display-->
+    <button @click="flag=!flag">显示/隐藏</button>
+    <!--3. transition-->
+    <transition name="ff" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+        <!-- 使被包裹的元素实现动画效果,transition标签不显示在页面上;name用于自动生成 CSS 过渡类名-->
+        <div v-show="flag" class="flag">亮亮</div>
+    </transition>
+    <!-- 4.transition-group:tag属性配置哪个元素应该被渲染,key属性:基于key的变化触发过渡, 每个 <transition-group> 的子节点必须有独立的key,动画才能正常工作,重复的 key 会造成渲染错误-->
+    <transition-group tag="ul" name="zff" enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutRight">
+        <li v-for="item in items" :key="item.id" v-if="flag">
+            {{ item.text }}
+        </li>
+    </transition-group>
+
+</div>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag:true,
+            items:[{id:1,text:"hh"},{id:2,text:"ssh"},{id:3,text:"aah"}]
+        }
+    });
+</script>
+</body>
+

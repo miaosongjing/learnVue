@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        tr td{
+            vertical-align: middle!important;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered text-center">
+                <caption class="h2 text-danger text-center">我的购物车</caption>
+                <tr>
+                    <td>全选 <input type="checkbox" v-model="checkAll"/></td>
+                    <td>商品</td>
+                    <td>价格</td>
+                    <td>数量</td>
+                    <td>小计</td>
+                    <td>操作</td>
+                </tr>
+                <tr v-for="a in products">
+                    <td><input type="checkbox" v-model="a.isSelected"/></td>
+                    <td>
+                        <!-- v-bind:动态绑定数据,等价于:-->
+                        <img :src="a.productCover" title="a.productName"/>{{a.productInfo}}
+                    </td>
+                    <td>{{a.productPrice}}</td>
+                    <td>
+                        <input type="numer" v-model="a.productCount" min="0" />
+                    </td>
+                    <td>
+                        {{(a.productPrice*a.productCount)|toFixed(2)}}
+                    </td>
+                    <td>
+                        <input type="button" class="btn-danger" value="删除" @click="remove(a)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="text-left">总价为:{{sum|toFixed(2)}}</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+<script src="./../node_modules/axios/dist/axios.js"></script>
+<script src="./../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        created: function () {//1.获取数据
+            axios.get('./carts.json').then(
+                val=>{this.products=val.data},
+                err=>{console.log(err)
+            });
+        },
+        computed:{
+            //计算属性默认进行缓存,当依赖的数据发生变化,此计算属性也发生变化
+            //计算属性都是一个值
+            checkAll:{//2.全选或者反选
+                get(){//当依赖的数据发生变化时,会默认执行get方法
+                    return this.products.every(item=>item.isSelected);//every方法:当有一个为false则返回false,所有为true时返回true
+                    },
+                set(val){
+                    this.products.forEach(item=>item.isSelected=val);
+                }
+            },
+            sum(){//4.合计  当sum是一个函数时,默认执行get方法,仅读取  计算采用reduce方法
+                var total=0;
+                total=this.products.reduce(function (prev, next) {
+                    console.log(prev);
+                    if(!next.isSelected){return prev};//如果当前项没有被选中,就返回上一次计算的综合prev
+                    return prev+next.productPrice*next.productCount
+                },0)
+                return total;
+            }
+        },
+        filters:{//3.过滤
+            toFixed(input,param){//保留小数 input代表|前面的值 param传进来的值,保留小数的位数
+                return '￥'+input.toFixed(param);
+            }
+        },
+        data:{
+            products:[],
+        },
+        methods:{//5.删除
+            remove(val){
+                this.products=this.products.filter(item=>item!==val);
+            }
+        }
+    });
+</script>
+</body>
+

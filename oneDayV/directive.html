@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--VUE指令:定义在dom标签的行间属性,具有特殊的意义-->
+    <!--v-model双向数据绑定 常用于input-->
+    <input type="text" v-model="msg">{{msg}}
+    <!--v-once数据只能绑定一次,它的值不能随着改变而改变-->
+    <div v-once>
+        {{msg}}
+    </div>
+    <!--v-text:将数据放置在dom结构中,并且数据将覆盖标签中的内容 只能识别数据中的文本,不能识别标签
+    v-html:可以识别标签
+    -->
+    <div v-text="msga"></div>
+    <div v-html="msga"></div>
+
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            msg:'欢迎你的到来',
+            msga:"<p>天气不错</p>>"
+        }
+    });
+</script>
+</body>
+
