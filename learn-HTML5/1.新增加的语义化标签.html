@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- lang="en"声明页面的语言模式，如果页面出现了英文单词，浏览器会自主发起是否翻译功能 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+    <!-- 
+        面试题：H5新特性
+        答：两大方向。
+        一方面是对传统html的升级：新增加一些语义化标签，如果article、header、footer、main；新增加一些标记标签，如mark、time；对原有标签进行修改，如strong、small；对原有标签进行删除，如font、center；对input标签也进行一些升级，如增加新的input类型number、data、color、email，不仅功能强大，而且能调取最适合用户使用的键盘，便于用户操作；此外，为表单元素新增属性placeholder：为表单框做默认的信息提示；还增加vedio、audio等元素，代替传统的flash；还增加canvas实现绘图和简单的动画
+        另一方面是对js提供辅助API的接口，比如默认进行本地存储、进行socket.io的实时通信、获取当前的地理位置、以及操作手机的一些硬件功能
+     -->
+    
+    <!-- 
+语义化标签：每个标签有自己特殊的含义，在搭建页面时，用合理的标签做合适的事情
+
+新增的语义化标签：默认都是块级标签
+        article
+        header
+        footer
+        main
+        section  
+        figure:配图区域
+        figcaption：配图说明
+        aside：与主体无关 
+        nav：导航
+标记标签：
+        mark：用来标记需要高亮显示的文本
+        time：标记日期文本
+调整的标签：
+        strong：之前是加粗，现在显示加粗，但语义是重点朗读
+        small：之前是变小，现在显示变小，但语义是附属细则
+        hr：之前是一条直线，现在是分割线
+删除的标签：可以用，但是没有含义
+        font，center
+
+
+     -->
+     <!-- 
+    text-indent:2rem;首行缩进2字符
+    实现figure中图片文字环绕，则figure需要浮动float，他的父级需要清除浮动
+
+      -->
+      <!-- 
+    无论实在pc还是移动端，更应该使用H5标签搭建页面结构
+        问题：IE6-8不识别
+        解决：在当前页面的head中（css后），导入html5.min.js插件
+        1.它用来将页面中不兼容的h5标签进行兼容处理
+        2.把css中使用标签选择器设置的样式替换成其他方式
+        3.使用条件注释插入此插件：条件注释中的代码严格区分大小写和空格
+        <!-- [if lt IE 9]>
+    <script src="js/html5.min.js"></script>
+    <![endif]-->
+
+
+       -->
+</body>
+</html>

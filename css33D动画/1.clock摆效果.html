@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clockBox{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -100px;
+            width: 200px;
+            height: 300px;
+            background: url('./IMG_0071.JPG');
+            background-size: 100% 100%;
+        }
+        .clockBox{
+            transform-origin:center top 0;
+            transform: rotate(60deg);
+            animation: clockMove 1s linear infinite both;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; 
+            fill-mode:
+                none:默认值，无特殊状态
+                forwards：动画完成后停留在最后一帧位置，正常是回到起始位置
+                backward：动画从第一帧位置开始
+                both：同时具有以上两个效果
+            */
+            
+        }
+        @keyframes clockMove {
+            0%,100%{
+                transform: rotate(60deg)
+            }
+            50%{
+                transform:rotate(-60deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clockBox">
+
+    </div>
+</body>
+</html>

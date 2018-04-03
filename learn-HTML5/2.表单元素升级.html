@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    传统的表单元素：
+    form
+    input:text/password/button/submit/reset/file/hidden/radio/checkbox
+    button
+    select
+    label
+    textarea
+    H5对表单元素的升级：
+    1.为input元素设置新的类型
+    search
+    email
+    tel
+    number
+    range
+    color
+    data
+    time
+    优势：功能强大；调取方便用户使用的虚拟键盘；部分类型提供表单验证
+    2.新增属性placeholder：为表单框做默认的信息提示
+    3.提供二级下拉框datalist
+
+    H5针对表单元素升级部分，在IE低版本不兼容，且难以处理。所以，在移动端使用H5，pc端不推荐
+    H5中的表单验证，内置规则不太好，在真实项目中，推荐使用传统正则验证
+     -->
+     <!-- label标签中的for属性，指向对应表单元素的id，操作label中的内容相当于在在操作表单元素 -->
+     <form action="http://www.baidu.com/">
+    
+        <input type="radio" name="sex" id="man"> <label for="man">男</label>
+        <input type="radio" name="sex" id="woman"> <label for="woman"s>女</label>
+         <!-- submit默认行为：点击按钮跳转到form的action对应的地址-->
+        <input type="submit">
+    </form>
+
+    <input type="text" placeholder="请输入">
+
+    <datalist>
+        <option value="cc">cc</option>
+        <option value="bb">bb</option>
+        <option value="aa">aa</option>
+    </datalist>
+
+</body>
+</html>

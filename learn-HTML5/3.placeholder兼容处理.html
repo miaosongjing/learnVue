@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .inputBox{
+        position: relative;
+        margin: 20px;
+        width: 200px;
+    }
+    .inputBox input，.inputBox .placeLike{
+        display: block;
+        padding: 0 10px;
+        width: 178px;
+        line-height: 30px;
+        border: 1px solid green;
+    }
+    .inputBox .placeLike{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:100;
+        color: #aaa;
+
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="inputBox">
+        <input type="text" data-place="请输入用户名">
+        <!-- <span class="placeLike">请输入用户名</span> -->
+    </div>
+    <div class="inputBox" >
+        <input type="password" data-place="请输入用密码">
+        <!-- <span class="placeLike">请输入密码</span> -->
+
+    </div>
+    <!-- 点击span，文本框获取焦点 
+        有内容输入，span消失；没有内容输入，span显示
+    -->
+    <script src="./placeholder.js"></script>
+</body>
+</html>
